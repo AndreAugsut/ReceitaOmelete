@@ -1,0 +1,128 @@
+:root{
+    --cor-subtitulo:hsl(14, 45%, 36%);
+    --cor-tempre:hsl(332, 51%, 32%);
+    --cor-fundcard:  hsl(0, 0%, 100%);
+    --cor-fundtemp:hsl(330, 100%, 98%);
+    --cor-fundbody: hsl(30, 54%, 90%);
+    --cor-texto:hsl(30, 10%, 34%);
+    --cor-titulo: hsl(24, 5%, 18%);
+    --font-titulo-subtitulo: "Young Serif", serif;
+    --font-texto:"Outfit", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-fundbody);
+    padding: 200px 0;
+}
+
+main{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--cor-fundcard);
+    border-radius: 20px;
+}
+
+main h1, h2{
+    font-family: var(--font-titulo-subtitulo);
+}
+
+
+main h2{
+    font-weight: 400;
+    color: var(--cor-subtitulo);
+}
+
+main img{
+ width: 100%;
+ border-radius: 30px;
+}
+
+main p{
+    font-family: var(--font-texto);
+}
+
+main .preparation h3{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 8px;
+    
+
+}
+
+main .preparation{
+    background-color:var(--cor-fundtemp);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: var(--font-texto);
+   
+   
+}
+
+li{
+    margin-left: 20px;
+    margin-bottom: 8px;
+    font-family: var(--font-texto);
+}
+
+main img, h1, p, .preparation, h2{
+    margin-bottom: 20px;
+
+}
+
+hr{
+    margin: 20px 0;
+}
+.nutricao .paragrafo{
+     margin-bottom: 20px;
+}
+
+.valoresnutricionais{
+    font-family: var(--font-texto);
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.valoresnutricionais .valor{
+    color: var(--cor-subtitulo);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        padding: 0;
+        
+    }
+
+    main{
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+       
+       
+    }
+
+    main img{
+        border-radius: 0;
+
+    }
+
+    .preparation{
+        margin: 25px ;
+    }
+
+    .titulo, .ingredientes, .instrucao, .nutricao{
+        padding: 10px 20px;
+    }
+    .nutricao{
+        padding-bottom: 25px;
+    }
+    
+   
+}
+
